@@ -1,17 +1,46 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar style="background-color: lightblue">
+    <ion-buttons slot="start">
+      <ion-button routerLink="../tab5"><ion-icon name="arrow-back-outline"></ion-icon>Inicio</ion-button>
+    </ion-buttons>
     <ion-title>
-      Tab 2
+      Twitter
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <center>
+    <p class="title">¿Que es Twitter?</p>
+  </center>
+  </ion-card>
+<ion-card>
+  <p>Twitter es una red social y un servicio de microblogging para la comunicación en tiempo real utilizado por millones de personas y organizaciones. Los usuarios de Twitter permanecen interconectados al publicar actualizaciones, conocidas como "tweets", en el sitio para compartir, intercambiar y descubrir información. Los tweets constan de 140 caracteres o menos y pueden contener ideas y varios tipos de información, como fotos, videos y enlaces a artículos. Los usuarios pueden acceder a estos mensajes publicados en Twitter a través de la Web o en un dispositivo móvil con conexión a Internet</p>
+</ion-card>
+<ion-card>
+  <a href="https://twitter.com/home" target="newpage"><img src="../../assets/download.png" alt=""></a>
+</ion-card>
+<center>
+<ion-button href="https://www.lenovo.com/mx/es/faqs/pc-vida-faqs/que-es-twitter/" target="newpage">Mas informacion</ion-button>
+</center>
+<p>presiona este boton para mostrar mas redes sociales ↧</p>
+<ion-fab horizontal="end" vertical="bottom" slot="fixed">
+  <ion-fab-button color="light">
+    <ion-icon md="caret-up" ios="chevron-back-circle-outline"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="start">
+    <ion-fab-button routerLink="../tab4" color="light">
+      <ion-icon name="logo-instagram"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button routerLink="../tab2" color="light">
+      <ion-icon name="logo-twitter"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button routerLink="../tab3" color="light">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+    </ion-fab-button>
+  </ion-fab-list>
+</ion-fab>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+
 </ion-content>
